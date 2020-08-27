@@ -1,0 +1,33 @@
+h4 {
+    color: white;
+    font-size: 27px;
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 5px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+p {
+    color: white;
+    font-size: 20px;
+    display: block;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.btn button {
+    padding: 5px 30px;
+}
+
+.showTitle {
+    width: 100%;
+    /* margin-left: 10%; */
+    text-align: center;
+    /* position: relative; */
+    margin-bottom: 20px;
+    
+}

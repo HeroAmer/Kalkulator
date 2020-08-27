@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+
+/* Media queries - responsive */
+
+/* Smartphones */
+@media only screen and (max-width: 500px) {
+  .wrapper {
+    text-align: center;
+    /* width: 100vw; */
+    /* height: 100vh; */
+  }
+
+  .logo-and-companyName>.logo>img {
+    margin-left: 8px;
+  }
+
+  .icons {
+    text-align: center;
+  }
+
+  .icons {
+    margin-left: 40px;
+    /* padding: 10px 50px; */
+  }
+}
+
+/* Tablets */
+@media (min-width: 501px) and (max-width: 768px) {
+  .wrapper {
+    text-align: center;
+    /* width: 100vw; */
+    /* height: 100vh; */
+  }
+
+  .logo-and-companyName>.logo>img {
+    margin-left: 8px;
+  }
+
+  .icons {
+    text-align: center;
+  }
+
+  .icons {
+    margin-left: 40px;
+    /* padding: 10px 50px; */
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  background-color: white !important;
+}
+
+.wrapper {
+  border-radius: 4px;
+  /* max-width: 800px; */
+  /* padding: 100px; */
+  padding: 10%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content: flex-start;
+}
+
+.logo-and-companyName {
+  margin: 0px;
+}
+
+.btn {
+  margin: 20px 0px;
+}
+
+.first-message {
+  /* font-family: 'Alata', sans-serif; */
+  margin: 20px 0px;
+}
+
+.font-another {
+  letter-spacing: 2px;
+  font-family: "Alata", sans-serif;
+}
+
+.second-message {
+  font-family: "Alata", sans-serif;
+}
+
+.btn>a {
+  height: 44px;
+  width: 174px;
+  background-color: rgb(0, 200, 83) !important;
+  padding: 10px 30px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  transition: all 0.6s;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+}
+
+.btn>a:hover {
+  box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.16),
+    0px 7px 8px 7px rgba(0, 0, 0, 0.23);
+}
+
+/* .btn > a {
+} */
+
+.wrapper>.footer>div {
+  margin-bottom: 20px;
+}
+
+.wrapper>.footer>.title-footer {
+  margin-top: 20px;
+}
+
+.wrapper>.footer>.icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.company-email {
+  color: grey;
+}
+
+.icons>div {
+  margin-right: 20px;
+}

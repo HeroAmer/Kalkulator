@@ -1,0 +1,21 @@
+
+
+.mat-step-header .mat-step-icon-selected,
+.mat-step-header .mat-step-icon-state-done,
+.mat-step-header .mat-step-icon-state-edit {
+  /* background-color: #88CF2A; */
+  background-color: rgb(0, 200, 83);
+}
+
+.mat-stepper-horizontal-line {
+  display: none;
+}
+
+::ng-deep .mat-horizontal-stepper-header-container {
+  padding: 0 10px;
+}
+
+
+::ng-deep .mat-horizontal-stepper-header-container .mat-horizontal-stepper-header {
+  padding: 0 10px;
+}

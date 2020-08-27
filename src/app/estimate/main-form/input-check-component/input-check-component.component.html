@@ -1,0 +1,12 @@
+<form class="form">
+  <!-- platforms -->
+  <div class="inputGroup" *ngFor="let platform of fetchedJson.platforms">
+    <input id="option{{platform.id}}" name="option{{platform.id}}" type="checkbox" />
+    <label for="option{{platform.id}}">{{platform.name}}</label>
+  </div>
+</form>
+
+
+
+
+<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">

@@ -1,0 +1,18 @@
+<div class="popup-text-area" *ngIf="isShow">
+
+  <app-gif>
+  </app-gif>
+  <!-- <div class="x-close">
+    <img class="close-svg" src="../../../assets/close.svg" alt="close" />
+  </div> -->
+  <img class="close-svg" src="../../../assets/close.svg" alt="close" (click)="closePopup()" />
+  <mat-card>
+    <mat-card-title>{{calculatorTitle}}</mat-card-title>
+    <!-- boldiranje pojedinih rijeci u subtitle nije bilo moguce , jer string interpolation guta html tagove kao string
+        tako da bi morali hard-kodirat paragraf da bi postigli to -->
+    <mat-card-subtitle>
+      <p>{{ calculatorSubtitle }}</p>
+    </mat-card-subtitle>
+    <app-popup-button></app-popup-button>
+  </mat-card>
+</div>

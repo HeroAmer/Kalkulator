@@ -1,0 +1,247 @@
+
+        
+{       "headlines" : [
+        {
+          "title": "PLATFORMS",
+          "question": "Choose on which platforms would you like to see your app"
+        },
+        {
+          "title": "NUMBER OF SCREENS",
+          "question": "What is approximate number of screens your app will have?"
+        },
+        {
+          "title": "SIGN UP AND LOGIN",
+          "question": "Does your app have login or Sign up options?"
+        },
+        {
+          "title": "ADMIN FEATURES",
+          "question": "Will you app have admin features for obtaining the app?"
+        },
+        {
+          "title": "FEATURES",
+          "question": "What features your app have?"
+        },
+        {
+          "title": "OPTIONAL",
+          "question": "Choose if you want some of our additional services"
+        }
+      ],
+        "pages":[
+                 [
+                {
+                        "id": 1,
+                        "name": "Android",
+                        "price": 20,
+                        "estimated": 25,
+                        "chosen": false,
+                        "showSubmitButton":false,
+                        "radio":false
+                },
+                {
+                        "id": 2,
+                        "name": "iOS",
+                        "price": 20,
+                        "estimated": 25,
+                        "chosen": false,
+                        "radio":false
+                },
+                {
+                        "id": 3,
+                        "name": "Web",
+                        "price": 20,
+                        "estimated": 25,
+                        "chosen": false,
+                        "radio":false
+                },
+                {
+                        "id": 4,
+                        "name": "Crossplatform",
+                        "price": 20,
+                        "estimated": 25,
+                        "chosen": false,
+                        "radio":false
+                }],
+
+
+                 [
+                {
+                        "id":5,
+                        "name": "1-6",
+                        "price": 5,
+                        "estimated": 25,
+                        "chosen": false,
+                        "showSubmitButton":false,
+                        "radio":true
+                },
+                {       
+                        "id":6,
+                        "name": "7-12",
+                        "price": 10,
+                        "estimated": 25,
+                        "chosen": false,
+                        "radio":true
+                },
+                {
+                        "id":7,
+                        "name": "13-20",
+                        "price": 30,
+                        "estimated": 25,
+                        "chosen": false,
+                        "radio":true
+                },
+                {
+                        "id":8,
+                        "name": "21+",
+                        "price": 28,
+                        "estimated": 25,
+                        "chosen": false,
+                        "radio":true
+                }
+        ],
+
+
+         [
+                {
+                        "id":9,
+                        "name": "Yes",
+                        "price": 20,
+                        "estimated": 25,
+                        "chosen": false,
+                        "showSubmitButton":false,
+                        "radio":true
+
+                },
+                {
+                        "id":10,
+                        "name": "No",
+                        "price": 20,
+                        "estimated": 25,
+                        "chosen": false,
+                        "radio":true
+
+                }],
+         [
+                {
+                        "id":11,
+                        "name": "userManagement",
+                        "price": 20,
+                        "estimated": 25,
+                        "chosen": false,
+                        "showSubmitButton":false,
+                        "radio":false
+                },
+                {
+                        "id":12,
+                        "name": "contentManagement",
+                        "price": 20,
+                        "estimated": 25,
+                        "chosen": false,
+                        "radio":false
+                }],
+
+
+
+                 [
+                {
+                        "id":13,
+                        "name": "Activity feed or news feed",
+                        "price": 20,
+                        "estimated": 25,
+                        "chosen": false,
+                        "showSubmitButton":false,
+                        "radio":false
+                },
+                {
+                        "id":14,
+                        "name": "In App products",
+                        "price": 20,
+                        "estimated": 25,
+                        "chosen": false,
+                        "radio":false
+                },
+                {
+                        "id":15,
+                        "name": "Shopping Cart",
+                        "price": 20,
+                        "estimated": 25,
+                        "chosen": false,
+                        "radio":false
+                },
+                {
+                        "id":16,
+                        "name": "Search",
+                        "price": 20,
+                        "estimated": 25,
+                        "chosen": false,
+                        "radio":false
+                },
+                {
+                        "id":17,
+                        "name": "Messaging system",
+                        "price": 20,
+                        "estimated": 25,
+                        "chosen": false,
+                        "radio":false
+                },
+                {
+                        "id":18,
+                        "name": "Rating System",
+                        "price": 20,
+                        "estimated": 25,
+                        "chosen": false,
+                        "radio":false
+                },
+                {
+                        "id":19,
+                        "name": "Maps",
+                        "price": 20,
+                        "estimated": 25,
+                        "chosen": false,
+                        "radio":false
+                },
+                {
+                        "id":20,
+                        "name": "Integrations",
+                        "price": 20,
+                        "estimated": 25,
+                        "chosen": false,
+                        "radio":false
+                }],
+
+
+
+                 [
+                {
+                        "id":21,
+                        "name": "Market Research",
+                        "price": 20,
+                        "estimated": 25,
+                        "chosen": false,
+                        "showSubmitButton" :true,
+                        "radio":false
+
+                },
+                {
+                        "id":22,
+                        "name": "Branding",
+                        "price": 20,
+                        "estimated": 25,
+                        "chosen": false,
+                        "radio":false
+                },
+                {
+                        "id":23,
+                        "name": "App release",
+                        "price": 20,
+                        "estimated": 25,
+                        "chosen": false
+                },
+                {
+                        "id":24,
+                        "name": "ASO",
+                        "price": 20,
+                        "estimated": 25,
+                        "chosen": false,
+                        "radio":false
+                }]]
+}

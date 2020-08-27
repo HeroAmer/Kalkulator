@@ -1,0 +1,50 @@
+<!-- <mat-horizontal-stepper linear> -->
+<div class="headline">
+  <h4>{{fetchedJson['headlines'][num].title}}</h4>
+  <p>{{fetchedJson['headlines'][num].question}}</p>
+</div>
+<mat-horizontal-stepper #stepper>
+  <mat-step *ngFor="let pages of fetchedJson.pages" completed="false">
+    <mat-spinner *ngIf="isLoading"></mat-spinner>
+    <form *ngIf="!isLoading" (submit)="onSendEmail(emailForm)" #emailForm="ngForm">
+      <div class="emailForm" *ngIf="pages[0].showSubmitButton">
+
+        <mat-form-field class="prvi">
+          <label>Your name</label>
+          <input matInput [formControl]="nameValidation" class="emailFormInput"  #name name="name" type="text" placeholder="" autocomplete="off" required>
+          <mat-error *ngIf="nameValidation.invalid">{{getErrorMessageName()}}</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+          <label>Your email</label>
+          <input matInput [formControl]="emailReg" class="emailFormInput" #email name="email" type="text" placeholder="" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" autocomplete="off" required>
+          <mat-error *ngIf="emailReg.errors?.pattern">Email not valid</mat-error>
+          <mat-error *ngIf="emailReg.invalid">{{getErrorMessageEmail()}}</mat-error>
+        </mat-form-field>
+        <h2>OPTIONAL</h2>
+        <p class="question-paragraph">Choose if you want some of our aditional services</p>
+      </div>
+
+      <div class="form"  *ngFor="let page of pages; let i = index">
+        <div [ngClass]="getClass()" [style.background-color]="page.disabled ? 'gainsboro' : 'white' " (click)="page.disabled ? openSnackBar() : emptyFun()">
+          <input  id="option{{page.id}}" [disabled]="page.disabled"   [(ngModel)]="page.chosen" name="option{{page.id}}" type="checkbox"
+             (click)="getTimeAndPrice($event, page.price, page.estimated, page.radio, num, pages, page.name, page.chosen, page.id, i, page, fetchedJson['headlines'][num].question, page.coefficient)"   class="chb" />
+          <label for="option{{page.id}}">{{page.name}}</label>
+        </div>
+<!--        <div *ngIf="page.radio" class="inputGroup">-->
+<!--          <input id="option{{page.id}}" [value]="page.price"  [(ngModel)]="page.chosen" name="radio" type="radio"-->
+<!--                 (change)="getTimeAndPrice($event, page.price, page.estimated, page.radio, num, pages, page.name, page.chosen, page.id, i)"  checked="checked" class="chb"/>-->
+<!--          <label for="option{{page.id}}">{{page.name}}</label>-->
+<!--        </div>-->
+      </div>
+    </form>
+  </mat-step>
+  <app-home-button-component></app-home-button-component>
+</mat-horizontal-stepper>
+
+<div class="buttons-container">
+  <button *ngIf="num > 0" class="button previous" mat-button (click)="goBack(stepper)">Back</button>
+  <button *ngIf="num !== fetchedJson.pages.length -1 " class="button next" [disabled]="buttonState()" mat-button
+    (click)="goForward(stepper)">Next</button>
+  <button [class.spinner]="btnLoading" [disabled]="!nameValidation.valid || !emailReg.valid" *ngIf=" num === fetchedJson.pages.length - 1 " class="button"
+     mat-raised-button (click)="getUsersAnswers()">Submit</button>
+</div>
